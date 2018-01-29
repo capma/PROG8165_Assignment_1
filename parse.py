@@ -26,16 +26,10 @@ def DecToHex(x):
 first_4_StudentID_Digits = raw_input("Input first 4 digits of your student number: ")
 last_4_StudentID_Digits = raw_input("Input last 4 digits of your student number: ")
 
-# first_4_StudentID_Digits = hex(int(first_4_StudentID_Digits))
-# last_4_StudentID_Digits = hex(int(last_4_StudentID_Digits))
-
 first_4_StudentID_Digits = DecToHex(int(first_4_StudentID_Digits))
 last_4_StudentID_Digits = DecToHex(int(last_4_StudentID_Digits))
 
-# print "First 4 digits to HEX: %s" % (first_4_StudentID_Digits)
-# print "Last 4 digits to HEX: %s" % (last_4_StudentID_Digits)
-
 first_part = "0x"
-rest_part = "000000000000000051020000"
+rest_part = "7214F1140000000060020000"
 
-print "Your TCP/IP packet is %s%s%s%s" % (first_part,first_4_StudentID_Digits, last_4_StudentID_Digits, rest_part)
+print "Your initial TCP/IP packet is %s%s%s%s" % (first_part,first_4_StudentID_Digits, last_4_StudentID_Digits, rest_part)
